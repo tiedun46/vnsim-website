@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+body {
+    font-family: 'Oswald', sans-serif !important;
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-header img{
+    width: 70px;
+  }
+
+  .header-container{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 2px 2px 6px #212121;
+  }
+
+
+.category-bar{
+  background: #ba9a98;
+}
+
+.btn-view{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 20px;
+  background:  #ede8e8;
+  cursor: pointer;
+  color: #f3564a;
+}
+
+/* .btn-view:hover{
+background: #fff;
+} */
+.unline-a{
+  color: black;
+  text-decoration: none;
+}
+.unline-a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.bg-hover{
+  padding: 10px;
+}
+.bg-hover:hover{
+background: #ede8e8;
+border-radius: 10px;
+}
+
+.post-img{
+width: 120px;
+height: 120px;
+margin-right: 20px;
+padding: 10px;
+background: #ba9a98;
+border-radius: 10px;
+}
+
+.btn-view-post{
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background:  #ede8e8;
+  cursor: pointer;
+  color: #f3564a;
+}
+
+.blog_date{
+font-style: italic;
+}
+
+.img-post-recent{
+  width: 120px;
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-item{
+  padding: 10px;
+  padding-bottom: 20px;
+  background: #e0e0e0;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.unline-a-footer{
+  text-decoration: none !important;
+  color: #6c757d !important;
+}
+
+/* ------------------------------------------------------------------- */
+/* Css scroll animation */
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  }
+  
+.hidden01{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1s;
+    }
+
+  .show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  }
+
+  .show01{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    }
+
+  .logo:nth-child(2){
+    transition-delay: 200ms;
+   }
+   
+   .logo:nth-child(3){
+       transition-delay: 400ms;
+   }
+   
+   /* .logo:nth-child(4){
+       transition-delay: 600ms;
+   } */
+/* End css scroll animation   */
+
+/* --------------------------------------------------------------------- */
+
+  /* Phần css chung */
+  .text-pd-top{
+    padding-top: 50px;
+  }
+  .icon-bar{
+    width: 40px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.icon-category{
+  width: 70px !important;
+}
+  .bg-color{
+    filter: blur(6px);
+  -webkit-filter: blur(6px);
+  }
+  .mg-top-3{
+  margin-top: 30px;
+  }
+
+.mg-top-6{
+  margin-top: 60px;
+  }
+
+.mg-top-8{
+  margin-top: 80px;
+  }
+  .mg-top-12{
+    margin-top: 120px;
+    }
+.mg-top-15{
+    margin-top: 150px;
+    }
+    .mg-top-18{
+      margin-top: 180px;
+      }
+.mg-top-20{
+      margin-top: 200px;
+      }
+  .text-size-50{
+    font-size: 50pt;
+  }
+  .text-size-30{
+    font-size: 30pt;
+  }
+  .text-size-10{
+    font-size: 10pt;
+  }
+  .w-100{
+    width: 100% !important;
+  }
+  .row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
