@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VNSIM Education</title>
     <link rel="stylesheet" href="./asset/css/stylehome.css">
+    <!-- Font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -19,9 +21,9 @@
     <!-- Header -->
     <div class="header-container">
         <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand logo-header mr-4" href="#"><img src="./asset/image/VnSim.png"></a>
-            <form class="form-inline my-2 my-lg-0 ml-5">
-                <input class="form-control pr-4 pl-4" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+            <a class="navbar-brand logo-header" href="#"><img class="logo-img" src="./asset/image/VnSim.png"></a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control pr-4 pl-4 fw-3 search-bg" type="search" placeholder="Tìm kiếm..." aria-label="Search">
                 <!-- <button class="btn btn-danger my-2 my-sm-0" type="submit">Tìm</button> -->
               </form>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,22 +33,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active ml-2 mr-2">
-                      <a class="nav-link font-weight-bold" href="#">Sản Phẩm</a>
+                      <a class="nav-link" href="#">Sản Phẩm</a>
+                      <ul class="header-subnav">
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Công nghệ sử dụng</a></li>
+                    </ul>
                     </li>
                     <li class="nav-item active ml-2 mr-2">
-                      <a class="nav-link font-weight-bold" href="#">Giải Pháp</a>
+                      <a class="nav-link" href="#">Giải Pháp</a>
+                      <ul class="header-subnav">
+                        <li><a href="">Mô phỏng 3D Toán học</a></li>
+                        <li><a href="">Mô phỏng 3D Hóa học</a></li>
+                        <li><a href="">Mô phỏng 3D Vật Lý</a></li>
+                        <li><a href="">Mô phỏng 3D Công nghệ</a></li>
+                        <li><a href="">Mô phỏng 3D Sinh học</a></li>
+                        <li><a href="">Mô phỏng 3D Địa Lý</a></li>
+                    </ul>
                     </li>
                     <li class="nav-item active ml-2 mr-2">
-                        <a class="nav-link font-weight-bold" href="#">Khách Hàng</a>
+                        <a class="nav-link" href="#">Khách Hàng</a>
                       </li>
                     <li class="nav-item active ml-2 mr-2">
-                        <a class="nav-link font-weight-bold" href="#">Tin Tức</a>
+                        <a class="nav-link" href="#">Tin Tức</a>
                       </li>
                     <li class="nav-item active ml-2 mr-2">
-                        <a class="nav-link font-weight-bold" href="#">Hỗ Trợ</a>
+                        <a class="nav-link" href="#">Hỗ Trợ</a>
                     </li>
                     <li class="nav-item active ml-2 mr-2">
-                        <a class="nav-link font-weight-bold" href="#">Giới Thiệu</a>
+                        <a class="nav-link" href="#">Giới Thiệu</a>
                       </li>
                   </ul>
               <form class="form-inline my-2 my-lg-0 ml-5">
@@ -73,7 +87,7 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./asset/image/slider.jpg" height="580px" alt="Los Angeles" class="d-block w-100 bg-color">
+                    <img src="./asset/image/slider_2.jpg" height="580px" alt="Chicago" class="d-block w-100 bg-color">
                   </div>
                   <div class="carousel-item">
                     <img src="./asset/image/slider_2.jpg" height="580px" alt="Chicago" class="d-block w-100 bg-color">
@@ -96,7 +110,7 @@
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-8">
-                      <h2 class="text-danger text-size-50 font-weight-bold">Phần mềm giáo dục phổ biến nhất</h2>
+                      <h1 class="text-danger text-size-50 fw-9">Phần mềm giáo dục phổ biến nhất</h1>
                     </div>
                     <div class="col col-lg-2">
                     </div>
@@ -119,8 +133,9 @@
 <!--Hết Slider Bar -->
 
 <!-- support bar -->
-    <div class="mg-top-18 container hidden01">
-        <h2 class="text-center text-size-30 font-weight-bold">Chúng tôi luôn sẵn sàng hỗ trợ khách hàng</h2>
+    <div class="mg-top-8 support-bar container hidden01">
+        <h2 class="text-center text-size-30 fw-5">Chúng tôi luôn sẵn sàng hỗ trợ khách hàng</h2>
+        <hr color="black" width="20%" size="10px" noshade="noshade" />
         <div class="row justify-content-md-center mg-top-8">
           <div class="col col-lg-3 text-center">
             <p>Hỗ trợ mọi lúc mọi nơi</p>
@@ -142,8 +157,9 @@
 <!-- support bar -->
 
 <!-- Category bar -->
-<div class="mg-top-15 category-bar hidden01">
-    <h2 class="text-center text-size-30 font-weight-bold text-pd-top">Chúng tôi cung cấp các giải pháp phần mềm mô phỏng 3D</h2>
+<div class="mg-top-8 category-bar hidden01">
+    <h2 class="text-center text-size-30 fw-5 text-pd-top">Chúng tôi cung cấp các giải pháp phần mềm mô phỏng 3D</h2>
+    <hr color="white" width="20%" size="10px" noshade="noshade" />
     <div class="row justify-content-md-center mg-top-8">
         <div class="col col-lg-2 text-center bg-hover logo hidden">
             <a href="#" class="unline-a">
@@ -165,7 +181,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-md-center mg-top-8">
+      <div class="row justify-content-md-center mg-top-6">
         <div class="col col-lg-2 text-center bg-hover logo hidden">
             <a href="#" class="unline-a">
           <img src="./asset/image/icon/project-management.png" class="icon-category"> <br>
@@ -194,8 +210,9 @@
 <!-- Category bar -->
 
 <!-- Customer bar -->
-<div class="mg-top-12 hidden01">
-    <h2 class="text-center text-size-30 font-weight-bold">Khách hàng của chúng tôi</h2>
+<div class="mg-top-12 customer-bar hidden01">
+    <h2 class="text-center text-size-30 fw-5">Khách hàng của chúng tôi</h2>
+    <hr color="black" width="20%" size="10px" noshade="noshade" />
     <div class="row justify-content-md-center mg-top-8">
       <div class="col col-lg-3">
         <div class="media post_item">
@@ -275,8 +292,9 @@
 <!-- Customer bar -->
 
 <!-- Blog bar -->
-<div class="mg-top-15 category-bar hidden01">
-    <h2 class="text-center text-size-30 font-weight-bold text-pd-top">Tin mới nhất</h2>
+<div class="mg-top-8 category-bar hidden01">
+    <h2 class="text-center text-size-30 fw-5 text-pd-top">Tin mới nhất</h2>
+    <hr color="white" width="20%" size="10px" noshade="noshade" />
     <div class="row justify-content-md-center mg-top-8">
         <div class="col col-lg-3">
             <a href="#" class="unline-a">
@@ -367,8 +385,9 @@
 <!-- Blog bar -->
 
 <!-- Contact bar -->
-<div class="mg-top-12 container hidden01">
+<div class="mg-top-8 contact-bar container hidden01">
     <h2 class="text-center text-size-30 font-weight-bold">Liên hệ ngay để nhận ưu đãi</h2>
+    <hr color="black" width="20%" size="10px" noshade="noshade" />
     <div class="row justify-content-md-center mg-top-6">
       <div class="col col-lg-3 text-center contact-item logo hidden">
         <img src="./asset/image/icon/24-hours-support.png" class="icon-bar"> <br>
@@ -389,13 +408,15 @@
 <!-- Contact bar -->
 
 <!-- Phần footer -->
-<footer class="text-center text-lg-start bg-dark text-muted mg-top-12 hidden01">
+<footer class="text-center text-lg-start bg-footer text-muted mg-top-12 hidden01">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center p-4 border-bottom">
+    <hr color="white" width="100%" size="10px" noshade="noshade" />
+    <section class="d-flex justify-content-center p-4">
       
       <div class="me-5 d-none d-lg-block text-center font-weight-bold">
-        <h5>Công ty cổ phần đầu tư và phát triển Công Nghệ Mô Phỏng Việt Nam</h5>
-        <a class="navbar-brand logo-header mr-4" href="#"><img src="./asset/image/VnSim.png"></a>
+        <h5 class="text-white">Công ty cổ phần đầu tư và phát triển Công Nghệ Mô Phỏng Việt Nam</h5>
+        <a class="navbar-brand mr-4" href="#"><img width="80px" src="./asset/image/VnSim.png"></a>
+        <hr color="white" width="50%" size="10px" noshade="noshade" />
       </div>
       
     </section>
@@ -411,7 +432,7 @@
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4 font-weight-bold text-danger">Giới thiệu
             </h6>
-            <p>
+            <p class="text-reset">
                 Công ty cổ phần đầu tư và phát triển Công Nghệ Mô Phỏng Việt Nam <br> Địa chỉ: Nhà số 105, ngõ 6, phố Vũ Hữu, phường Nhân Chính, quận Thanh Xuân
                 (Số 32 Tố Hữu đi vào), Hà Nội, Việt Nam
             </p>
@@ -495,11 +516,11 @@
 
             <div class="row justify-content-md-center mb-4">
               <div class="col col-lg-4">
-                <h4>Tư vấn bán hàng:</h4>
+                <h4 class="text-white">Tư vấn bán hàng:</h4>
                 <h2 class="text-danger font-weight-bold">+ 1800.00000</h2>
               </div>
               <div class="col col-lg-4">
-                <h4>Chăm sóc khách hàng:</h4>
+                <h4 class="text-white">Chăm sóc khách hàng:</h4>
                 <h2 class="text-danger font-weight-bold">+ 1900.00000</h2>
               </div>
             </div>
